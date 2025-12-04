@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkySense - Weer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"
+  />
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" />
+</head>
+<body class="theme-cold" data-image-base="{{ url_for('static', filename='images') }}">
+  <div class="page-wrapper">
+    <header class="top-bar">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="presentation">
+            <path
+              d="M24 42a10 10 0 0 1 0-20 12 12 0 0 1 22-5 9 9 0 0 1 2 18H24Z"
+              fill="currentColor"
+              opacity="0.18"
+            />
+            <path
+              d="M24 38a10 10 0 0 1 0-20 12 12 0 0 1 22-5 9 9 0 0 1 2 18H24Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div class="brand-text">
+          <div class="brand-title">SkySense</div>
+          <div class="brand-subtitle">Altijd voorbereid</div>
+        </div>
+      </div>
+
+      <div class="location-pill" onclick="openLocationEdit()">
+        <div>
+          <span class="location-label">Locatie</span>
+          <span id="currentLocationName" class="location-name">Zoeken...</span>
+        </div>
+        <span class="edit-icon" aria-hidden="true">✏️</span>
+      </div>
+    </header>
+
+    <section class="search-bar">
+      <div class="search-inner">
+        <input
+          type="text"
+          id="locationInput"
+          placeholder="Zoek een locatie... (bv. Eindhoven, Amsterdam)"
+        />
+        <button id="searchButton" type="button">Zoeken</button>
+      </div>
+      <div class="status-line">
+        <div id="statusMessage" class="status-message">Zoek of laat je locatie bepalen</div>
+        <div id="errorMessage" class="error-message"></div>
+      </div>
+    </section>
+
+    <main class="layout">
+      <section class="left-column">
+        <section class="current-weather-card">
+          <div class="current-main">
+            <div class="current-icon">
+              <span id="currentWeatherIcon">🌧️</span>
+            </div>
+            <div class="current-temp-block">
+              <div id="currentTemp" class="current-temp">--°C</div>
+              <div id="currentCondition" class="current-condition">
+                Zoek een locatie
+              </div>
+            </div>
+          </div>
+          <div class="current-meta">
+            <div class="meta-item">
+              <span class="meta-icon">🧭</span>
+              <span id="metaLocation">Nog geen locatie</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-icon">🕒</span>
+              <span id="metaUpdated">Wachten op gegevens</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="map-section">
+          <div class="map-card">
+            <div id="map"></div>
+            <div class="map-overlay">
+              <div class="map-stat">
+                <span class="stat-icon">🌬️</span>
+                <span>Wind: <span id="windValue">-</span></span>
+              </div>
+              <div class="map-stat">
+                <span class="stat-icon">💧</span>
+                <span>Luchtvochtigheid: <span id="humidityValue">-</span></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="forecast-section">
+          <div class="forecast-header">Verwachting</div>
+          <div id="forecastRow" class="forecast-row">
+          </div>
+        </section>
+      </section>
+
+      <section class="right-column">
+        <article id="aiAdvice" class="advice-card">
+          <div class="advice-label">Weeradvies</div>
+          <p class="advice-text">
+            Voer een locatie in om een persoonlijk advies te krijgen.
+          </p>
+        </article>
+
+        <div class="character-wrapper">
+          <img
+            id="characterImage"
+            src="{{ url_for('static', filename='images/character-cold.png') }}"
+            alt="Weerkarakter"
+            class="character-image"
+          />
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>

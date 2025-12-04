@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-labelledby="title desc">
+  <title>Karakter met regen</title>
+  <desc>Een natgeregend personage met een donkerblauwe jas en regendruppels.</desc>
+  <defs>
+    <linearGradient id="coatRain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#365474"/>
+      <stop offset="100%" stop-color="#233448"/>
+    </linearGradient>
+    <linearGradient id="bgRain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d7e7f7" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#bdd1e6" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="520" rx="26" fill="url(#bgRain)" />
+  <g transform="translate(70 36)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="70" y="186" width="170" height="200" rx="44" fill="url(#coatRain)" stroke="#162332" stroke-width="6"/>
+    <rect x="40" y="232" width="44" height="92" rx="18" fill="#2f435b" stroke="#162332" stroke-width="6"/>
+    <rect x="246" y="232" width="44" height="92" rx="18" fill="#2f435b" stroke="#162332" stroke-width="6"/>
+    <rect x="104" y="374" width="36" height="86" rx="12" fill="#172638" stroke="#0f1826" stroke-width="6"/>
+    <rect x="186" y="374" width="36" height="86" rx="12" fill="#172638" stroke="#0f1826" stroke-width="6"/>
+    <rect x="96" y="448" width="56" height="20" rx="10" fill="#bcc8d5" stroke="#8aa0b5" stroke-width="4"/>
+    <rect x="178" y="448" width="56" height="20" rx="10" fill="#bcc8d5" stroke="#8aa0b5" stroke-width="4"/>
+    <path d="M155 194c-3 46 0 74 0 74" stroke="#dbe7f5" stroke-width="7"/>
+    <path d="M170 194c-3 36 0 64 0 64" stroke="#dbe7f5" stroke-width="6"/>
+    <path d="M185 194c-2 40-1 66-1 66" stroke="#dbe7f5" stroke-width="7"/>
+    <path d="M122 208c16-18 41-26 69-26s53 8 69 26" stroke="#162332" stroke-width="8"/>
+    <circle cx="152" cy="102" r="54" fill="#2c3d56" stroke="#162332" stroke-width="6"/>
+    <path d="M118 104c8 8 12 18 12 30" stroke="#0f1826" stroke-width="6"/>
+    <path d="M186 104c-8 8-12 18-12 30" stroke="#0f1826" stroke-width="6"/>
+    <path d="M130 126c8 5 12 12 12 22" stroke="#dbe7f5" stroke-width="5"/>
+    <path d="M174 126c-8 5-12 12-12 22" stroke="#dbe7f5" stroke-width="5"/>
+    <path d="M136 150h12" stroke="#dbe7f5" stroke-width="6"/>
+    <path d="M166 150h12" stroke="#dbe7f5" stroke-width="6"/>
+    <path d="M138 174c10 6 28 6 38 0" stroke="#0f1826" stroke-width="6"/>
+    <path d="M105 74c16-26 52-34 74-12" stroke="#162332" stroke-width="8"/>
+    <path d="M120 60c22-16 48-10 62 8" stroke="#dbe7f5" stroke-width="6"/>
+  </g>
+  <g fill="none" stroke="#4f7aa0" stroke-width="6" stroke-linecap="round" opacity="0.7">
+    <path d="M74 116c-8 20-8 36 0 50"/>
+    <path d="M330 120c-6 18-6 34 0 48"/>
+    <path d="M104 416c-8 20-8 36 0 50"/>
+    <path d="M286 382c-10 26-10 46 0 66"/>
+    <path d="M208 88c-8 22-8 40 0 58"/>
+    <path d="M256 64c-8 20-8 38 0 54"/>
+  </g>
+</svg>

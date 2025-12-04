@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-labelledby="title desc">
+  <title>Karakter bij warm weer</title>
+  <desc>Een vrolijk personage met oranje shirt en zonnestralen.</desc>
+  <defs>
+    <linearGradient id="shirtWarm" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffa63a"/>
+      <stop offset="100%" stop-color="#f27c1c"/>
+    </linearGradient>
+    <linearGradient id="bgWarm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1dc" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffdcb8" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="520" rx="26" fill="url(#bgWarm)" />
+  <g transform="translate(70 40)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="70" y="186" width="170" height="186" rx="38" fill="url(#shirtWarm)" stroke="#9a3f0c" stroke-width="6"/>
+    <rect x="40" y="230" width="44" height="90" rx="18" fill="#f3902c" stroke="#9a3f0c" stroke-width="6"/>
+    <rect x="246" y="230" width="44" height="90" rx="18" fill="#f3902c" stroke="#9a3f0c" stroke-width="6"/>
+    <rect x="104" y="358" width="36" height="86" rx="12" fill="#2b2b36" stroke="#16171e" stroke-width="6"/>
+    <rect x="186" y="358" width="36" height="86" rx="12" fill="#2b2b36" stroke="#16171e" stroke-width="6"/>
+    <rect x="96" y="432" width="56" height="20" rx="10" fill="#f0f2f5" stroke="#c8ced6" stroke-width="4"/>
+    <rect x="178" y="432" width="56" height="20" rx="10" fill="#f0f2f5" stroke="#c8ced6" stroke-width="4"/>
+    <path d="M155 190c-3 40 0 66 0 66" stroke="#ffe7cd" stroke-width="7"/>
+    <path d="M170 190c-3 30 0 52 0 52" stroke="#ffe7cd" stroke-width="6"/>
+    <path d="M185 190c-2 34-1 54-1 54" stroke="#ffe7cd" stroke-width="7"/>
+    <path d="M122 206c16-14 41-22 69-22s53 8 69 22" stroke="#9a3f0c" stroke-width="8"/>
+    <circle cx="152" cy="98" r="54" fill="#f7cba5" stroke="#9a3f0c" stroke-width="6"/>
+    <path d="M118 98c8 10 12 20 12 32" stroke="#9a3f0c" stroke-width="6"/>
+    <path d="M186 98c-8 10-12 20-12 32" stroke="#9a3f0c" stroke-width="6"/>
+    <path d="M130 120c8 6 12 12 12 22" stroke="#9a3f0c" stroke-width="5"/>
+    <path d="M174 120c-8 6-12 12-12 22" stroke="#9a3f0c" stroke-width="5"/>
+    <path d="M136 146h12" stroke="#9a3f0c" stroke-width="6"/>
+    <path d="M166 146h12" stroke="#9a3f0c" stroke-width="6"/>
+    <path d="M138 170c12 12 32 12 44 0" stroke="#9a3f0c" stroke-width="6"/>
+    <path d="M105 74c16-14 48-22 70-6" stroke="#9a3f0c" stroke-width="8"/>
+    <path d="M120 58c22-10 46-6 60 10" stroke="#ffa63a" stroke-width="6"/>
+  </g>
+  <g stroke="#ffb357" stroke-width="6" stroke-linecap="round">
+    <path d="M320 120l18-6m-12-14 10-12m-14-10 6-18m-24 12-6-18m-10 22-12-10m-8 24-18-6m8 26-18 6m22 10-10 12m24 10-6 18m24-12 6 18m10-24 12 10m8-24 18 6m-10-24 18-6" opacity="0.55"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 520" role="img" aria-labelledby="title desc">
+  <title>Karakter bij zacht weer</title>
+  <desc>Een ontspannen personage met groene jas en lichte glimlach.</desc>
+  <defs>
+    <linearGradient id="coatMild" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4aa16b"/>
+      <stop offset="100%" stop-color="#2f7c4f"/>
+    </linearGradient>
+    <linearGradient id="bgMild" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e6f6ed" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#d2eddc" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="420" height="520" rx="26" fill="url(#bgMild)" />
+  <g transform="translate(70 36)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="70" y="186" width="170" height="198" rx="42" fill="url(#coatMild)" stroke="#1f3c2c" stroke-width="6"/>
+    <rect x="40" y="232" width="44" height="92" rx="18" fill="#3c8a5c" stroke="#1f3c2c" stroke-width="6"/>
+    <rect x="246" y="232" width="44" height="92" rx="18" fill="#3c8a5c" stroke="#1f3c2c" stroke-width="6"/>
+    <rect x="104" y="372" width="36" height="86" rx="12" fill="#1f3c2c" stroke="#13271d" stroke-width="6"/>
+    <rect x="186" y="372" width="36" height="86" rx="12" fill="#1f3c2c" stroke="#13271d" stroke-width="6"/>
+    <rect x="96" y="446" width="56" height="20" rx="10" fill="#cde5d6" stroke="#9dc9af" stroke-width="4"/>
+    <rect x="178" y="446" width="56" height="20" rx="10" fill="#cde5d6" stroke="#9dc9af" stroke-width="4"/>
+    <path d="M155 192c-3 44 0 72 0 72" stroke="#e8f6ee" stroke-width="7"/>
+    <path d="M170 192c-3 34 0 60 0 60" stroke="#e8f6ee" stroke-width="6"/>
+    <path d="M185 192c-2 38-1 62-1 62" stroke="#e8f6ee" stroke-width="7"/>
+    <path d="M122 206c16-14 41-22 69-22s53 8 69 22" stroke="#1f3c2c" stroke-width="8"/>
+    <circle cx="152" cy="102" r="54" fill="#31463a" stroke="#1f3c2c" stroke-width="6"/>
+    <path d="M118 104c8 8 12 18 12 30" stroke="#15261c" stroke-width="6"/>
+    <path d="M186 104c-8 8-12 18-12 30" stroke="#15261c" stroke-width="6"/>
+    <path d="M130 126c8 5 12 12 12 22" stroke="#e8f6ee" stroke-width="5"/>
+    <path d="M174 126c-8 5-12 12-12 22" stroke="#e8f6ee" stroke-width="5"/>
+    <path d="M136 150h12" stroke="#e8f6ee" stroke-width="6"/>
+    <path d="M166 150h12" stroke="#e8f6ee" stroke-width="6"/>
+    <path d="M138 174c12 10 32 10 44 0" stroke="#1f3c2c" stroke-width="6"/>
+    <path d="M105 74c16-18 52-26 74-6" stroke="#1f3c2c" stroke-width="8"/>
+    <path d="M120 60c22-12 48-6 62 10" stroke="#e8f6ee" stroke-width="6"/>
+  </g>
+  <g stroke="#9acfb2" stroke-width="6" stroke-linecap="round" opacity="0.55">
+    <path d="M88 120c20-10 36-10 52 0"/>
+    <path d="M280 104c18 10 34 12 50 6"/>
+    <path d="M120 418c18 8 32 8 48 0"/>
+    <path d="M290 386c14 8 28 10 44 6"/>
+  </g>
+</svg>
