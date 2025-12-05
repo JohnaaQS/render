@@ -10,10 +10,5 @@ ROOT_DIR = BASE_DIR.parent
 load_dotenv(ROOT_DIR / ".env")
 
 class Config:
-    # Ondersteun meerdere env varianten om een verkeerde naam te voorkomen
-    WEATHER_API_KEY = (
-        os.getenv("WEATHER_API_KEY")
-        or os.getenv("WEATHERAPI_KEY")
-        or os.getenv("WEATHER_KEY")
-    )
+    WEATHER_API_KEY = os.getenv("WEATHER_API_KEY")
     PORT = int(os.getenv("PORT", 3000))

@@ -171,38 +171,22 @@ async function handleLookup(query, sourceLabel = "") {
     setStatus(`Weer geladen voor ${data.location.name}`);
   } catch (err) {
     console.error(err);
-    const message =
-      err?.message ||
-      "Kon het weer niet ophalen. Controleer de locatie en probeer opnieuw.";
-    setError(message);
+    setError(
+      "Kon het weer niet ophalen. Controleer de locatie en probeer opnieuw."
+    );
     setStatus("Probeer een andere plaatsnaam.");
   }
 }
 
 async function fetchWeather(query) {
   const response = await fetch(`/api/weather?q=${encodeURIComponent(query)}`);
-
-  const bodyText = await response.text();
-  let data = null;
-  try {
-    data = JSON.parse(bodyText);
-  } catch (e) {
-    // geen geldige JSON, laten we data leeg houden
-  }
-
-  const apiError =
-    (typeof data?.error === "string" && data.error) ||
-    data?.error?.message ||
-    data?.message;
-
   if (!response.ok) {
-    throw new Error(
-      apiError || `Kon weerdata niet ophalen (status ${response.status})`
-    );
+    throw new Error("Locatie niet gevonden");
   }
 
-  if (!data || apiError) {
-    throw new Error(apiError || "Kon weerdata niet ophalen");
+  const data = await response.json();
+  if (data?.error) {
+    throw new Error(data.error.message || "Kon weerdata niet ophalen");
   }
 
   return data;
